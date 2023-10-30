@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-color-primary: #828282;
+  --font-color-secondary: #3f3d56;
+  --font-color-tertiary: #ee24ff;
+  --bg-color: #eceff2;
+
+  --font-family-heading: 'Dosis', sans-serif;
+  --font-family-text: 'Open Sans', sans-serif;
+}
