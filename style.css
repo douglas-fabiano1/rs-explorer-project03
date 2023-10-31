@@ -5,12 +5,119 @@
 }
 
 :root {
-  font-size: 62.5%;
+  --font-family-heading: "Dosis", sans-serif;
+  --font-family-text: "Open Sans", sans-serif;
   --font-color-primary: #828282;
   --font-color-secondary: #3f3d56;
   --font-color-tertiary: #ee24ff;
-  --bg-color: #eceff2;
+  --bg-color-primary: #fff;
+  --border-line-color: #eceff2;
+}
 
-  --font-family-heading: 'Dosis', sans-serif;
-  --font-family-text: 'Open Sans', sans-serif;
+body {
+  background-color: var(--bg-color-primary);
+  text-align: center;
+  height: 100vh;
+
+  padding-top: 64px;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+
+main {
+  width: 626px;
+  margin: 0 auto;  
+  text-align: center;
+
+  margin-bottom: 64px;
+}
+
+#main-img {
+  width: 350px;
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-family: var(--font-family-heading);
+  font-size: 32px;
+  color: var(--font-color-secondary);
+  font-weight: normal;
+
+  margin-bottom: 16px;
+}
+
+h1 span {
+  font-weight: bold;
+  color: var(--font-color-tertiary);
+}
+
+#text {
+  width: 540px;
+  margin: 0 auto;
+
+  margin-bottom: 32px;
+}
+
+#text p + p {
+  margin-top: 32px;
+}
+
+p {
+  font-family: var(--font-family-text);
+  font-size: 15px;
+  color: var(--font-color-primary);
+}
+
+p span {
+  color: var(--font-color-secondary);
+  font-weight: bold;
+}
+
+
+#main-img {
+  width: 350px;
+}
+
+nav {
+  margin-top: 16px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap:42px;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--font-color-secondary);
+}
+
+li a:hover {
+  color: var(--font-color-tertiary);
+}
+
+.line {
+  width: 319px;
+  margin: 0 auto;
+  height: 0;
+  border: 1px solid var(--border-line-color);
+}
+
+#wave {
+  width: 100%;
+  height: 104px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-top: 40.83px;
 }
